@@ -21,7 +21,7 @@ import "reactflow/dist/style.css";
 const initialNodes: Node[] = [
   {
     id: "1",
-    type: "input",
+    type: "textUpdater",
     data: { label: "input node" },
     position: { x: 250, y: 5 },
   },
@@ -39,7 +39,7 @@ const nodeOrigin: NodeOrigin = [0.5, 0.5];
 
 const initBgColor = "#1A192B";
 
-const DnDFlow = () => {
+const DnDFlow = ({ nodeTypes }) => {
   const [reactFlowInstance, setReactFlowInstance] =
     useState<ReactFlowInstance>();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -50,7 +50,6 @@ const DnDFlow = () => {
     setNodes((nds) =>
       nds.map((n) => {
         if (n.id === "1") {
-          // it's important that you create a new object here in order to notify react flow about the change
           n.data = {
             ...n.data,
             label: nodeName,
@@ -101,6 +100,7 @@ const DnDFlow = () => {
             onDragOver={onDragOver}
             nodeOrigin={nodeOrigin}
             style={{ background: initBgColor }}
+            nodeTypes={nodeTypes}
           >
             <Controls />
             <Background />
