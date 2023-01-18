@@ -37,6 +37,8 @@ const getId = () => `dndnode_${id++}`;
 
 const nodeOrigin: NodeOrigin = [0.5, 0.5];
 
+const initBgColor = "#1A192B";
+
 const DnDFlow = () => {
   const [reactFlowInstance, setReactFlowInstance] =
     useState<ReactFlowInstance>();
@@ -98,6 +100,7 @@ const DnDFlow = () => {
             onDrop={onDrop}
             onDragOver={onDragOver}
             nodeOrigin={nodeOrigin}
+            style={{ background: initBgColor }}
           >
             <Controls />
             <Background />

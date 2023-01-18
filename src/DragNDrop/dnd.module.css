@@ -30,7 +30,8 @@
   right: 10px;
   top: 10px;
   z-index: 4;
-  font-size: 12px;
+  font-size: 20px;
+  color: aliceblue;
 }
 
 @media screen and (min-width: 768px) {

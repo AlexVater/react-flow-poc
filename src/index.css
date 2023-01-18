@@ -1,9 +1,13 @@
 .react-flow__node-input {
-    border-color: #0041d0;
+    border: 2px solid #0041d0;
+    background-color: #0041d0;
+    color: aliceblue;
 }
 
 .react-flow__node-output {
-    border-color: #ff0072;
+    border: 2px solid #ff0072;
+    background-color: #ff0072;
+    color: aliceblue;
     height: 50px;
     width: 50px;
     border-radius: 50%;
