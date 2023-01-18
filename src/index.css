@@ -1,0 +1,10 @@
+.react-flow__node-input {
+    border-color: #0041d0;
+}
+
+.react-flow__node-output {
+    border-color: #ff0072;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
