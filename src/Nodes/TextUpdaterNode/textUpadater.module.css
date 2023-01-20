@@ -1,0 +1,24 @@
+.textUpdaterNode {
+    height: 50px;
+    border: 1px solid #180437;
+    padding: 5px;
+    border-radius: 5px;
+    background: #5922ac;
+}
+
+.textUpdaterNodeEspec {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #5922ac;
+    padding: 5px;
+    border-radius: 5px;
+    background: #5922ac;
+    color: aliceblue;
+}
+
+
+.textUpdaterNode label {
+    display: block;
+    color: aliceblue;
+    font-size: 12px;
+}

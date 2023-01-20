@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import { Handle, Position } from "reactflow";
 
+import styles from "./textUpadater.module.css";
+
 const handleStyle = { left: 10 };
 
 export const TextUpdaterNode = ({}) => {
@@ -9,7 +11,7 @@ export const TextUpdaterNode = ({}) => {
   }, []);
 
   return (
-    <>
+    <div className={styles.textUpdaterNode}>
       <Handle type="target" position={Position.Top} />
       <div>
         <label htmlFor="text">Text:</label>
@@ -22,7 +24,7 @@ export const TextUpdaterNode = ({}) => {
         id="b"
         style={handleStyle}
       />
-    </>
+    </div>
   );
 };
 
